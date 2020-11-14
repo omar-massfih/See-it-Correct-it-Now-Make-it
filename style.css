@@ -1,0 +1,224 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+    background: white;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+/* Responsiveness */
+
+@media(max-width: 600px) {
+    .fixed-top {
+        flex-direction: column;
+    }
+
+    .fixed-top nav a {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 1168px) {
+    #NEWSEVENTS .cell {
+        padding: 0 .5rem;
+    }
+
+    #NEWSEVENTS .row {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+/* Header */
+
+header {
+    min-height: 100vh;
+
+    background-image: url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-position: 35% 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid #110b15;
+
+    /* Center items flexbox fallback */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header h1 {
+    padding: 2rem 8rem;
+    font-size: 5.4rem;
+    font-weight: 300;
+    color: white;
+    text-shadow: 0 0 18px #000;
+}
+
+section {
+    margin-bottom: 5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+
+/* Section Header */
+
+section > h2 {
+    position: relative;
+    text-align: center;
+    width: 84%;
+    margin: 3rem auto;
+    padding-top: 10rem;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #384d45;
+}
+
+section > h3 {
+    text-align: center;
+}
+
+section > h5 {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 4rem auto;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #384d45;
+    text-shadow: #110b15;
+}
+
+
+/* Fixed Header */
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: silver;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    box-shadow: 0 0 7px rgba(1, 5, 12, .08);
+    align-items: center;
+}
+
+.fixed-top nav {
+    padding: .6rem 2rem;
+}
+
+.fixed-top .brand {
+    color: black;
+    padding: 0 2rem;
+    font-size: 2rem;
+}
+
+.fixed-top nav a {
+    margin-left: .6rem;
+    padding: 0 .6rem;
+    text-decoration: none;
+    color: black;
+    transition: .08s;
+}
+
+.fixed-top nav a:hover {
+    background-color: #2f6a57;
+    color: #ffffff;
+}
+
+
+/* Announcement Section */
+
+#ANNOUNCEMENTS p {
+    max-width: 95%;
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+
+/* News & Event Section */
+
+#NEWSEVENTS .row {
+    display: flex;
+    justify-content: center;
+}
+
+#NEWSEVENTS .cell {
+    width: 240px;
+    padding: 0 3.4rem;
+}
+
+#NEWSEVENTS .cell img {
+    width: 100%;
+}
+
+
+/* Degree Section */
+
+#DEGREES .row {
+    max-width: 95%;
+    width: 1060px;
+    margin: 0 auto;
+    border: 2px solid #d1d1d3;
+    border-radius: 8px;
+}
+
+#DEGREES .major {
+    padding: 1rem 3rem;
+}
+
+#DEGREES .major:not(:last-child) {
+    border-bottom: 1px solid #d1d1d3;
+}
+
+#DEGREES .major h3 {
+    font-weight: 600;
+}
+
+#DEGREES .major .title {
+    color: #24404a;
+}
+
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: silver;
+    color: black;
+}
+
+footer .center {
+    text-align: center;
+}
+
+footer .right {
+    text-align: right;
+}
+
+footer a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
