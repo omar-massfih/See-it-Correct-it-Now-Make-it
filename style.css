@@ -1,17 +1,3 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    scroll-behavior: smooth;
-    background: white;
-}
-
-section {
-    margin-bottom: 4rem;
-}
-
-/* Responsiveness */
-
 @media(max-width: 600px) {
     .fixed-top {
         flex-direction: column;
@@ -32,32 +18,35 @@ section {
     }
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+    background: white;
+}
 
-
-
-
-/* Header */
+section {
+    margin-bottom: 4rem;
+}
 
 header {
     min-height: 100vh;
-
     background-image: url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
     background-position: 35% 35%;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
     border-bottom: 2px solid #110b15;
-
-    /* Center items flexbox fallback */
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
+    flex-direction: column;
     align-items: center;
 }
 
 header h1 {
-    padding: 2rem 8rem;
     font-size: 5.4rem;
     font-weight: 300;
+    padding: 2rem 8rem;
     color: white;
     text-shadow: 0 0 18px #000;
 }
@@ -69,9 +58,6 @@ section {
 h3 {
     font-size: 1.5rem;
 }
-
-
-/* Section Header */
 
 section > h2 {
     position: relative;
@@ -99,9 +85,6 @@ section > h5 {
     text-shadow: #110b15;
 }
 
-
-/* Fixed Header */
-
 .fixed-top {
     position: fixed;
     top: 0;
@@ -121,17 +104,17 @@ section > h5 {
 }
 
 .fixed-top .brand {
-    color: black;
     padding: 0 2rem;
     font-size: 2rem;
+    color: black;
+    
 }
 
 .fixed-top nav a {
+    color: black;
     margin-left: .6rem;
     padding: 0 .6rem;
     text-decoration: none;
-    color: black;
-    transition: .08s;
 }
 
 .fixed-top nav a:hover {
@@ -139,18 +122,12 @@ section > h5 {
     color: #ffffff;
 }
 
-
-/* Announcement Section */
-
 #ANNOUNCEMENTS p {
-    max-width: 95%;
-    width: 1000px;
     margin: 0 auto;
+    width: 1000px;
+    max-width: 95%;
     font-size: 1.2rem;
 }
-
-
-/* News & Event Section */
 
 #NEWSEVENTS .row {
     display: flex;
@@ -165,9 +142,6 @@ section > h5 {
 #NEWSEVENTS .cell img {
     width: 100%;
 }
-
-
-/* Degree Section */
 
 #DEGREES .row {
     max-width: 95%;
@@ -184,18 +158,6 @@ section > h5 {
 #DEGREES .major:not(:last-child) {
     border-bottom: 1px solid #d1d1d3;
 }
-
-#DEGREES .major h3 {
-    font-weight: 600;
-}
-
-#DEGREES .major .title {
-    color: #24404a;
-}
-
-
-
-/* Footer */
 
 footer {
     display: flex;
